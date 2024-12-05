@@ -80,11 +80,11 @@ img{
     margin-bottom: 2rem;
     border-radius: 20px;
     overflow: hidden;
-    border: 2px solid rgb(182, 182, 182);
+    border: 1px solid rgb(211, 211, 211);
     transition: 0.5s;
     display: flex;
     justify-content: center;
-    box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.7);
+    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .project_box img{
     object-fit: cover;
@@ -217,7 +217,7 @@ img{
         margin-bottom: 5rem;
         border-radius: 20px;
         overflow: hidden;
-        border: 2px solid rgb(182, 182, 182);
+        border: 1px solid rgb(221, 221, 221);
         display: flex;
         justify-content: center;
     }
@@ -267,5 +267,12 @@ img{
         text-decoration: none;
         color: #40cdc1;
     }
+    #navbar li a:hover{
+        color:#6be1ee;
+        font-size: 2.2rem;
+    }
+    #navbar #index a:hover{
+        color:#6be1ee;
+        font-size: 4.2rem;
+    }
 }
-
