@@ -159,7 +159,7 @@ img{
 @media screen and (max-width:500px){
     #index{
         position: absolute;
-        left: 6rem;
+        left: 7rem;
         top: 2rem;
     }
     #navbar ul{
@@ -169,12 +169,13 @@ img{
         height: 8rem;
         align-items: center;
         font-size: 2rem;
+        margin-left: 6rem;
     }
     #navbar #index a{
         color: black;
         font-size: 4rem;
-        margin-right: 3rem;
         padding: 1rem;
+        margin-left: 1rem;
     }
     #navbar li{
         list-style: none;
@@ -182,7 +183,6 @@ img{
     }
     #navbar a{
         text-decoration: none;
-        padding: 6rem;
         color: #6a6a6a;
         padding: 1rem;
         padding-right: 10rem;
