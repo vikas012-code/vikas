@@ -114,12 +114,11 @@ img{
     transition:0.5s;
 }
 .project_box img:hover{
-    height: 45rem;
+    height: 43rem;
     width: 35rem;
 }
 .project_box:hover{
-    width: 33rem;
-    height: 42rem;
+    scale: 1.1;
     border: none;
     border-radius: 30px;
     box-shadow: none;
@@ -247,12 +246,11 @@ img{
         font-size: 2rem;
     }
     .project_box img:hover{
-        height: 66rem;
-        width: 54rem;
+        height: 56rem;
+        width: 45rem;
     }
     .project_box:hover{
-        width: 50rem;
-        height: 65rem;
+        scale: 1.13;
         border: none;
         border-radius: 30px;
         box-shadow: none;
