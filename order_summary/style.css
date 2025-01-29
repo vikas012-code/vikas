@@ -21,7 +21,7 @@ body{
     font-family: sans-serif;
 }
 #card #image{
-    height: 15rem;
+height: 15rem;
 }
 #card img{
     width: 30rem;
@@ -51,6 +51,7 @@ body{
     display: flex;
     text-align: center;
     width: 20rem;
+    /* margin: 1rem; */
     color:#757992d0;
 }
 #plan{
@@ -110,14 +111,15 @@ body{
     font-weight: 600;
     box-shadow: black;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
 }
 #submit:hover{
     background-color:#f8feff;
     color: #666666;
     border: 0.1px solid rgb(151, 151, 151);
-    scale: 1.1;
-    top: 5.3rem;
+    width: 18rem;
+    height: 4rem;
+    transition-duration: 0.5s;
 }
 #cancel{
     position: relative;

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 @media screen and (max-width:1000px){
     html{
@@ -79,12 +80,13 @@ img{
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 20px;
-    overflow: hidden;
+    overflow:hidden;
     border: 1px solid rgb(211, 211, 211);
     transition: 0.5s;
     display: flex;
     justify-content: center;
     box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    flex-wrap:wrap-reverse;
 }
 .project_box img{
     object-fit: cover;
@@ -93,28 +95,31 @@ img{
     transition:0.5s;
 }
 .project_box div{
-    height: 4rem;
+    min-height: 3rem;
     width: 31rem;
     position: relative;
-    background-color:rgb(253, 253, 253) ;
-    margin-top: -3rem;
-    padding:2rem;
+    background-color:rgb(255, 255, 255) ;
+    padding-left:2rem;
+    padding-top: 0.5rem;
     display: flex;
-    align-items: center;
-    transition:0.5s;
+    z-index: 10;
+    position: relative;
+    transition:1s;
 }
 .project_box a{
     text-decoration: none;
     transition:0.5s;
 }
 .project_box p{
-    margin: 1rem;
+    margin-left: 1rem;
     color: #000;
     font-weight: 600;
     transition:0.5s;
+    padding-bottom: 1rem;
 }
 .project_box img:hover{
-    height: 43rem;
+    transform: translateY(16rem);
+    height: 48rem;
     width: 35rem;
 }
 .project_box:hover{
@@ -122,6 +127,10 @@ img{
     border: none;
     border-radius: 30px;
     box-shadow: none;
+}
+.project_box :hover div{
+    transform: translateY(18rem);
+    
 }
 #qoute_contact{
     font-size: 1.5rem;
@@ -154,6 +163,10 @@ img{
 #navbar #index a:hover{
     color:#6be1ee;
     font-size: 2.7rem;
+}
+
+.ephesis{
+    color: #6be1ee;
 }
 @media screen and (max-width:500px){
     #index{
@@ -219,6 +232,7 @@ img{
         border: 1px solid rgb(221, 221, 221);
         display: flex;
         justify-content: center;
+        flex-wrap:wrap-reverse;
     }
     .project_box img{
         object-fit:cover;
@@ -227,11 +241,11 @@ img{
 
     }
     .project_box div{
-        height: 1rem;
+        min-height: 1rem;
         width: 41rem;
         position: relative;
         background-color:rgb(255, 255, 255) ;
-        margin-top: 2rem;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -240,13 +254,13 @@ img{
         text-decoration: none;
     }
     .project_box p{
-        margin: 1rem;
+        
         color: #000;
         font-weight: 600;
         font-size: 2rem;
     }
     .project_box img:hover{
-        height: 56rem;
+        height: 58rem;
         width: 45rem;
     }
     .project_box:hover{
@@ -274,3 +288,4 @@ img{
         font-size: 4.2rem;
     }
 }
+
