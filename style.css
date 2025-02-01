@@ -72,9 +72,10 @@ img{
     width: 35rem;
     margin-top: 5rem;
     margin-left: 2rem;
-    
 }
+
 .project_box{
+    box-sizing: border-box;
     width: 30rem;
     height: 40rem;
     margin-top: 2rem;
@@ -105,33 +106,54 @@ img{
     z-index: 10;
     position: relative;
     transition:1s;
+    
 }
 .project_box a{
+    color: #313131;
     text-decoration: none;
     transition:0.5s;
+    
 }
+
 .project_box p{
     margin-left: 1rem;
-    color: #000;
     font-weight: 600;
     transition:0.5s;
-    padding-bottom: 1rem;
+    padding-bottom: 0.2rem;
+}
+.project_details{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: 0 -5px 10px -10px #333;
+}
+
+p.project_tech{
+    margin-right: 0.5rem;
+    color: rgb(169, 168, 168);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.ephesis{
+    color: #6be1ee;
+}
+.project_box:hover{
+    scale: 1.1;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: none;
+    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .project_box img:hover{
     transform: translateY(16rem);
     height: 48rem;
     width: 35rem;
 }
-.project_box:hover{
-    scale: 1.1;
-    border: none;
-    border-radius: 30px;
-    box-shadow: none;
-}
-.project_box :hover div{
+.project_box img:hover + .project_details{
     transform: translateY(18rem);
     
 }
+
 #qoute_contact{
     font-size: 1.5rem;
 }
@@ -165,9 +187,7 @@ img{
     font-size: 2.7rem;
 }
 
-.ephesis{
-    color: #6be1ee;
-}
+
 @media screen and (max-width:500px){
     #index{
         position: absolute;
@@ -212,7 +232,7 @@ img{
         font-size: 1.6rem;
     }
     img{
-        width: 45rem;
+        width: 46rem;
         margin-top: 5rem;
         margin-left: 2rem;
         
@@ -235,17 +255,15 @@ img{
         flex-wrap:wrap-reverse;
     }
     .project_box img{
-        object-fit:cover;
         height: 45rem;
         margin: 0;
 
     }
     .project_box div{
         min-height: 1rem;
-        width: 41rem;
+        width: 44rem;
         position: relative;
         background-color:rgb(255, 255, 255) ;
-        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -259,15 +277,38 @@ img{
         font-weight: 600;
         font-size: 2rem;
     }
+    
+    .project_details{
+        display: flex;
+        flex-direction: column;
+        
+        box-shadow: 0 -5px 10px -10px #333;
+    }
+    .project_name{
+        padding-right: 1rem;
+    }
+    p.project_tech{
+        margin-right: 0.5rem;
+        color: rgb(169, 168, 168);
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    .ephesis{
+        color: #6be1ee;
+    }
     .project_box img:hover{
-        height: 58rem;
-        width: 45rem;
+        transform: translateY(16rem);
+        height: 62rem;
+        width: 48rem;
     }
     .project_box:hover{
         scale: 1.13;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
         border: none;
         border-radius: 30px;
         box-shadow: none;
+        box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.1);
     }
     #main_blog{
         margin-top: 3rem;
